@@ -22,12 +22,12 @@ const MetadataServer = async(req, res) => {
     "name": `Handsome Dev Official #${token_id}`,
     "symbol": "SLPPYD",
     "description": "This is the OFFICIAL metadata for the Handsome Dev collection. It is a limited edition collection of the sexiest highschool portraits",
-    "image": `${process.env.BASE_URL}/image-${token_id}`,
+    "image": `${process.env.BASE_URL}/image/${token_id}`,
     "attributes": attributes,
     "properties": {
         "files": [
             {
-                "uri": `${process.env.BASE_URL}/image-${token_id}`,
+                "uri": `${process.env.BASE_URL}/image/${token_id}`,
                 "type": "image/png"
             }
         ]
