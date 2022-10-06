@@ -2,7 +2,6 @@ import metadata from "../../../database/metadata.json";
 import dotenv from 'dotenv';
 
 dotenv.config();
-//
 if (!process.env.BASE_URL) {
   throw new Error('No base url found!');
 }
