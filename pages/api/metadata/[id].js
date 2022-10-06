@@ -13,23 +13,7 @@ const MetadataServer = async(req, res) => {
   const total_tokens = 3
 
   res.statusCode=200
-  let j = {
-    "name": "Handsome Dev ",
-    "symbol": "SLPPYD",
-    "description": "The Handsome Dev collection Pre-reveal",
-    "image": "0.png",
-    "attributes": [],
-    "properties": {
-        "files": [
-            {
-                "uri": "0.png",
-                "type": "image/png"
-            }
-        ],
-        "category": "image"
-    },
-    "seller_fee_basis_points": 500
-  }
+  let j = {"name":"DeGod #1353","symbol":"DGOD","description":"A collection of 10,000 of the most degenerate gods in the universe.","seller_fee_basis_points":999,"image":"https://metadata.degods.com/g/1352-dead.png","external_url":"https://degods.com","attributes":[{"trait_type":"background","value":"Deep Ocean Blue"},{"trait_type":"skin","value":"Turquoise"},{"trait_type":"specialty","value":"None"},{"trait_type":"clothes","value":"Silk Robe"},{"trait_type":"neck","value":"None"},{"trait_type":"head","value":"Propeller Hat"},{"trait_type":"eyes","value":"Laser Eyes"},{"trait_type":"mouth","value":"None"},{"trait_type":"version","value":"DeadGod"},{"trait_type":"y00t","value":"Claimed"}],"collection":{"name":"DeGods","family":"Godplex"},"properties":{"files":[{"uri":"https://metadata.degods.com/g/1352-dead.png","type":"image/png"}],"category":"image","creators":[{"address":"AxFuniPo7RaDgPH6Gizf4GZmLQFc4M5ipckeeZfkrPNn","share":100}]}}
   res.setHeader('Content-Type', 'application/json');
   res.json(j)
   /*
