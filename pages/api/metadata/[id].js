@@ -13,7 +13,7 @@ const MetadataServer = async(req, res) => {
   const total_tokens = 3
 
   res.statusCode=200
-  res.json({
+  let j = {
     "name": "Handsome Dev ",
     "symbol": "SLPPYD",
     "description": "The Handsome Dev collection Pre-reveal",
@@ -29,8 +29,9 @@ const MetadataServer = async(req, res) => {
         "category": "image"
     },
     "seller_fee_basis_points": 500
-})
-  
+  }
+  res.json(j)
+  /*
   if(parseInt(token_id) <= total_tokens && token_id > 0 ) {
 
     const attributes = metadata[parseInt(token_id)]
@@ -58,6 +59,7 @@ const MetadataServer = async(req, res) => {
     res.statuscode = 404
     res.json({error: "The token id is out of range"})
   }
+  */
 }
 
 export default MetadataServer
