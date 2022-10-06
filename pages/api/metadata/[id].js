@@ -11,6 +11,25 @@ const MetadataServer = async(req, res) => {
   // THE ID YOU ASKED IN THE URL
   const token_id = req.query.id;
   const total_tokens = 3
+
+  res.statusCode=200
+  res.json({
+    "name": "Handsome Dev ",
+    "symbol": "SLPPYD",
+    "description": "The Handsome Dev collection Pre-reveal",
+    "image": "0.png",
+    "attributes": [],
+    "properties": {
+        "files": [
+            {
+                "uri": "0.png",
+                "type": "image/png"
+            }
+        ],
+        "category": "image"
+    },
+    "seller_fee_basis_points": 500
+})
   
   if(parseInt(token_id) <= total_tokens && token_id > 0 ) {
 
