@@ -30,6 +30,7 @@ const MetadataServer = async(req, res) => {
     },
     "seller_fee_basis_points": 500
   }
+  res.setHeader('Content-Type', 'application/json');
   res.json(j)
   /*
   if(parseInt(token_id) <= total_tokens && token_id > 0 ) {
