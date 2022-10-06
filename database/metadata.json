@@ -1,0 +1,44 @@
+{
+    "1":[
+        {
+            "trait_type": "face",
+            "value": "heckled"
+        },
+        {
+            "trait_type": "mood",
+            "value": "artistic"
+        },
+        {
+            "trait_type": "accessory",
+            "value": "none"
+        }
+    ],
+    "2":[
+        {
+            "trait_type": "face",
+            "value": "flirtatious"
+        },
+        {
+            "trait_type": "mood",
+            "value": "whimsical"
+        },
+        {
+            "trait_type": "accessory",
+            "value": "none"
+        }
+    ],
+    "3":[
+        {
+            "trait_type": "face",
+            "value": "alert"
+        },
+        {
+            "trait_type": "mood",
+            "value": "serious"
+        },
+        {
+            "trait_type": "accessory",
+            "value": "airbender"
+        }
+    ]
+}
